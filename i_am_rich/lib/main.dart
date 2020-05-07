@@ -1,3 +1,15 @@
 import 'package:flutter/material.dart';
 
-void main() => runApp(MyApp());
+// スタートポイント
+void main() {
+  runApp(
+    // テスト用のシンプルなウィジェット
+    MaterialApp(
+      // センタリングのためのウィジェット
+      home: Center(
+        // テキストウィジェット
+        child: Text('coded'),
+      ),
+    ),
+  );
+}
