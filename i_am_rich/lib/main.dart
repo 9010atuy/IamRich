@@ -12,10 +12,18 @@ void main() {
           appBar: AppBar(
             // AppBarウィジェットのプロパティをセット
             title: Text('I am Rich'),
-            backgroundColor: Colors.purpleAccent[100],
+            backgroundColor: Colors.blueAccent[100],
           ),
           // Scaffoldウィジェットの背景色プロパティをセット
-          backgroundColor: Colors.purple[100],
+          backgroundColor: Colors.blue[100],
+          // Scaffoldウィジェットのbodyに、Imageウィジェットを配置する
+          body: Center(
+            child: Image(
+              // ネットワークから画像を取得
+              image: NetworkImage(
+                  'https://image.shutterstock.com/image-photo/bright-spring-view-cameo-island-260nw-1048185397.jpg'),
+            ),
+          ),
         ),
       ),
     ),
