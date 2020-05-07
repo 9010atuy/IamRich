@@ -7,8 +7,16 @@ void main() {
     MaterialApp(
       // センタリングのためのウィジェット
       home: Center(
-        // テキストウィジェット
-        child: Text('coded'),
+        // スキャフォールドウィジェット（AppBar, Buttonを配置するための汎用ウィジェット）
+        child: Scaffold(
+          appBar: AppBar(
+            // AppBarウィジェットのプロパティをセット
+            title: Text('I am Rich'),
+            backgroundColor: Colors.purpleAccent[100],
+          ),
+          // Scaffoldウィジェットの背景色プロパティをセット
+          backgroundColor: Colors.purple[100],
+        ),
       ),
     ),
   );
