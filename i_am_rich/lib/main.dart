@@ -11,7 +11,7 @@ void main() {
         child: Scaffold(
           appBar: AppBar(
             // AppBarウィジェットのプロパティをセット
-            title: Text('I am Rich'),
+            title: Text('I AM Rich'),
             backgroundColor: Colors.blueAccent[100],
           ),
           // Scaffoldウィジェットの背景色プロパティをセット
@@ -19,9 +19,7 @@ void main() {
           // Scaffoldウィジェットのbodyに、Imageウィジェットを配置する
           body: Center(
             child: Image(
-              // ネットワークから画像を取得
-              image: NetworkImage(
-                  'https://image.shutterstock.com/image-photo/bright-spring-view-cameo-island-260nw-1048185397.jpg'),
+              image: AssetImage('images/diamond.png'),
             ),
           ),
         ),
